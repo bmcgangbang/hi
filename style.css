@@ -1,0 +1,393 @@
+   
+   /*nav bar start */
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 51, 50);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    background-color: red;
+    color: #f1f1f1;
+  }
+  .closebtn{
+    color:white;
+    font-size: 50px;
+ }
+ .closebtn:hover{
+    color:red;
+     }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+
+   .threebar{
+    padding-top: 2px;
+
+   }
+   .threebar:hover{
+    background-color: red;
+    border-radius: 10px;
+   }
+ 
+ .nav-bar{
+  background-color:black;
+  display: flex;
+ justify-content:space-between;
+ margin-top: 10px;
+ margin-bottom: 50px;
+ border-radius: 5px;
+ }
+
+ .logo{
+  width: 161px;
+  
+ }
+
+
+
+ * {
+box-sizing: border-box;
+}
+
+.openBtn {
+background: black;
+border: none;
+padding: 10px 15px;
+font-size: 20px;
+cursor: pointer;
+}
+
+.openBtn:hover {
+background: red;
+border-radius: 10px;
+}
+
+.overlay {
+height: 100%;
+width: 100%;
+display: none;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+position: relative;
+top: 46%;
+width: 80%;
+text-align: center;
+margin-top: 30px;
+margin: auto;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+cursor: pointer;
+color: white;
+}
+
+.overlay .closebtn:hover {
+color: red;
+}
+
+.overlay input[type=text] {
+padding: 15px;
+font-size: 17px;
+border: none;
+float: left;
+width: 80%;
+background: white;
+}
+
+.overlay input[type=text]:hover {
+background: #f1f1f1;
+}
+
+.overlay button {
+float: left;
+width: 20%;
+padding: 15px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.overlay button:hover {
+background: red;
+border-radius:5px;
+}
+
+@media screen and (max-width:400px) {
+  
+.logo{
+  width: 120px;
+  margin-top: 8px;
+}
+
+}
+
+/*nav bar end */
+
+/*slid show start */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: red;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.watch{
+    background-color:  white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.watch:hover{
+    background-color: red;
+    color: white;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: red;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.show{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* content start*/
+.content{
+  margin-left: 10%;
+  margin-right: 10%;  
+  border-radius: 5px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: rgb(26, 25, 25);
+ 
+}
+@media screen and (max-width:800px) {
+  
+  .show{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.content{
+  margin-left: 1%;
+  margin-right: 1%;
+  justify-content: center
+}
+}
+
+
+.Avatar{
+ width:150px;
+height: 200px;
+border-radius: 5px 5px 0 0;
+}
+.Avatar:hover {
+filter: grayscale(100%) blur(3px);
+
+}
+.card-text{
+color: white;
+font-size: 14px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-family:'Poppins', sans-serif;
+}
+
+.conta {
+position: relative;
+
+color: white;
+}
+
+.bottom-left {
+background-color: red;
+position: absolute;
+bottom: 0px;
+left: 0px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 2px;
+border-radius: 5px;
+}
+
+.top-left {
+position: absolute;
+top: 1px;
+left: 1px;
+background-color: white;
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 2px;
+border-radius: 5px;
+}
+
+.bottom-right {
+background-color: rgb(12, 255, 12);
+position: absolute;
+bottom: 0px;
+right: 0px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 2px;
+border-radius: 5px;
+}
+
+/* content end*/
+/*video end*/
+.lang{
+  color:rgb(253, 248, 248);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(26, 25, 25);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.lang a{
+text-decoration: none;
+color: white;
+background-color: rgb(16, 218, 16);
+padding: 5px;
+border-radius: 5px;
+margin-left: 10px;
+}
+.lang a:hover{
+  background-color: red;
+}
+.button{
+color:rgb(253, 248, 248);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(26, 25, 25);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.button a{
+text-decoration: none;
+color: white;
+background-color: rgb(16, 218, 16);
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right:10px ;
+padding-left:10px ;
+border-radius: 5px;
+margin-left: 10px;
+}
+.button a:hover{
+background-color: red;
+}
+.lang a .button a:active{
+background-color: red;
+}
+@media screen and (max-width:800px) {
+.lang{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.button{
+margin-left: 1%;
+  margin-right: 1%;
+}
+}
+/*video end*/
