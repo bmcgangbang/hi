@@ -47,3 +47,41 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+//palyer
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true,
+			"playbackRates": [
+				"x2",
+				"x1.5",
+				"x1",
+				"x0.5"
+			]
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null ,
+			"width": null ,
+		},
+		"autoPlay": true,
+		"mute": true,
+		"allowTheatre": false,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": false,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+//player
