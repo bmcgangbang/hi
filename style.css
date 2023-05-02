@@ -346,9 +346,7 @@ background-color: rgb(16, 218, 16);
 padding: 5px;
 border-radius: 5px;
 margin-left: 10px;
-}
-.lang a:hover{
-  background-color: red;
+ margin-top: 10px;
 }
 .button{
 color:rgb(253, 248, 248);
@@ -375,12 +373,24 @@ border-radius: 5px;
 margin-left: 10px;
  margin-top: 10px;
 }
+.lang a:hover{
+background-color: red;
+}
 .button a:hover{
+  background-color: red;
+  }
+.lang a:active{
 background-color: red;
 }
-.lang a .button a:active{
-background-color: red;
-}
+.button a:active{
+  background-color: red;
+  }
+.button a:visited{
+  background-color: rgb(60, 59, 59);
+  }
+  .lang a:visited{
+    background-color:  rgb(60, 59, 59);
+    }
 @media screen and (max-width:800px) {
 .lang{
   margin-left: 1%;
