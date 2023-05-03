@@ -397,9 +397,7 @@ background-color: red;
 .button a:visited{
   background-color: rgb(60, 59, 59);
   }
-  .lang a:visited{
-    background-color:  rgb(60, 59, 59);
-    }
+
 @media screen and (max-width:800px) {
 .lang{
   margin-left: 1%;
